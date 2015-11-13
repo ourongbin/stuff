@@ -1,0 +1,3 @@
+term screen-256color
+
+caption always "%?%F%{-b 4w}%:%{-b bb}%? %H | %m-%d %c | %?%F%{-b 4w}%?%L=%-Lw%75>%{-b w4}%n%f* %t%{-}%+Lw%-0<"
