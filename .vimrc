@@ -1,5 +1,7 @@
 set nocompatible               
 
+set ttyfast
+
 set cursorline
 set cursorcolumn
 
