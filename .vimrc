@@ -8,13 +8,16 @@ set tabstop=4
 set softtabstop=4    
 set expandtab    
 
-set nu    
+set number
 
 set autoindent    
 
 set mouse=a
 
-set tags+=~/mt/tags
+set clipboard=unnamed
+
+set hlsearch
+set ignorecase
 
 " -----------------Vundle-------------------
 filetype off                    " required!
