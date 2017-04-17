@@ -34,7 +34,7 @@ Bundle 'gmarik/vundle'
 " .........................
 " original repos on github
 Bundle 'altercation/vim-colors-solarized'
-syntax enable
+ "syntax enable
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_contrast="normal"
@@ -45,6 +45,14 @@ colorscheme solarized
 " Bundle 'sjl/gundo.vim'
 " Bundle 'jiangmiao/auto-pairs'
 " Bundle 'klen/python-mode'
+Bundle 'fatih/vim-go'
+let g:go_fmt_autosave = 0
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 " Bundle 'Valloric/ListToggle'
 " Bundle 'SirVer/ultisnips'
 " Bundle 'Valloric/YouCompleteMe'
