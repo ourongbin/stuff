@@ -1,0 +1,21 @@
+#!/usr/bin/expect
+
+set user [exec echo xx | base64 --decode]
+set code [exec python2.7 -c "import pyotp; totp = pyotp.TOTP(''); print '{:>06}'.format(totp.now())"]
+set pass [exec echo xx | base64 --decode]
+
+spawn ssh -p 35000 "$user@"
+
+expect {
+        -re "Verification code:" { send "$code\n" ; }
+}
+
+expect {
+        -re "Password:" { send "$pass\n" ; }
+}
+
+expect {
+       -re  ".*please input order num.*:"  { send "1\n" ; } 
+}
+
+interact
