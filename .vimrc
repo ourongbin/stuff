@@ -36,6 +36,7 @@ Bundle 'gmarik/vundle'
 " .........................
 " original repos on github
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-surround'
  "syntax enable
 set background=dark
 let g:solarized_termtrans=1
