@@ -1,4 +1,3 @@
-set keep-english-in-normal-and-restore-in-insert
 set nocompatible               
 
 syntax on
@@ -19,7 +18,7 @@ set autoindent
 
 set mouse=a
 
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 set hlsearch
 set ignorecase
