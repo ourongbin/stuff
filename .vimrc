@@ -1,5 +1,7 @@
 set nocompatible               
 
+syntax on
+
 set ttyfast
 
 set cursorline
@@ -45,7 +47,7 @@ colorscheme solarized
 " Bundle 'sjl/gundo.vim'
 " Bundle 'jiangmiao/auto-pairs'
 " Bundle 'klen/python-mode'
-Bundle 'fatih/vim-go'
+" Bundle 'fatih/vim-go'
 let g:go_fmt_autosave = 0
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1

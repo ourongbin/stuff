@@ -1,0 +1,38 @@
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+MODULE=overseas-mtpoilist-service
+ENV=dev
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#
+# DO NOT EDIT
+
+WORK_DIR=/opt/meituan/mobile
+LOGS_DIR=/opt/logs/mobile
+
+.PHONY: usage clean build run dir
+usage:
+	@echo "First time usage: make dir && make build && make run"
+	@echo "After first time: make build && make run"
+clean:
+	mvn clean
+build:
+	cd $(MODULE);\
+	export ENV=$(ENV);\
+	sh deploy/compile.sh;\
+	cd target;\
+	rm -rf $(WORK_DIR)/$(MODULE);\
+	mkdir $(WORK_DIR)/$(MODULE);\
+	cp *.war $(WORK_DIR)/$(MODULE);\
+	cp -r ../deploy $(WORK_DIR)/$(MODULE)
+run: 
+	cd $(WORK_DIR)/$(MODULE);\
+	export MODULE=$(MODULE);\
+	sh deploy/run.sh
+dir:
+	sudo mkdir -p  $(WORK_DIR)
+	sudo chmod a+w $(WORK_DIR)
+	sudo mkdir -p  $(LOGS_DIR)
+	sudo chmod a+w $(LOGS_DIR)
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
