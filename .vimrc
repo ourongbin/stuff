@@ -1,3 +1,4 @@
+set keep-english-in-normal-and-restore-in-insert
 set nocompatible               
 
 syntax on
