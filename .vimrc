@@ -18,7 +18,7 @@ set autoindent
 
 set mouse=a
 
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 set hlsearch
 set ignorecase
