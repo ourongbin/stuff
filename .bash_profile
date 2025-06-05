@@ -4,8 +4,8 @@ alias ll='ls -lG'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$HOME/apache-maven-3.6.3/bin:$PATH";
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home"
+export PATH="$HOME/bin:$HOME/apache-maven-3.9.5/bin:$PATH";
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

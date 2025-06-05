@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo chflags uchg $1
